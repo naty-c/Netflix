@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #414141;
+    color: #CCDFCB;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+}
+
+/* Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    background-image: url('/assets/solo-leveling-bg.jpg');
+    background-size:cover;
+    background-position:center;
+    opacity: 0.4; 
+    z-index: -1; 
+}
+
+/* Menu */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #414141;
+    height: 10vh;   
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    padding: 2em 25vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #CCDFCB;
+    position: relative;
+}
+
+ul li a:hover {
+    color: #FF645C;
+    border-bottom-color: #CCDFCB;
+    cursor: pointer;
+  }
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.1rem;
+    background: #CCDFCB;
+    transition: width 0.4s ease;
+    border-radius: 2px;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+/* Content */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Left Side */
+.left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_serie {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.title h1 {
+    font-size: 2rem;
+}
+
+.genre-container {
+    display: flex;
+    flex-direction: row;
+    font-weight: 200;
+    gap: 15px;
+    font-size: 0.6rem;
+    margin: 20px 0;
+}
+
+.genre {
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.genre:hover {
+    color: #FF645C;
+    border-color: #CCDFCB;
+    background-color: linear-gradient(to right, transparent, red);
+    box-shadow: 0 0 0.625rem rgba(0, 255, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.category-year {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.stars-container {
+    display: flex;
+    color: #FF645C;
+    gap: 2px;
+}
+
+.des-container {
+    display: flex;
+    margin-top: 10px;
+}
+.description {
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+}
+
+.more-info {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FF645C;
+    position: relative;
+}
+
+.more-info:hover {
+    color: #CCDFCB;
+    border-bottom-color: #CCDFCB;
+  }
+
+.more-info::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: #FF645C;
+    transition: width 0.4s ease;
+    border-radius: 2px;
+  }
+
+.more-info:hover::after {
+    width: 60%;
+  }
+
+.season-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+}
+
+.episodes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 650px;
+    margin-top: 10px;
+}
+
+.card-episode {
+    width: 230px;
+    height: 135px;
+    background-color: white;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.card-episode:hover {
+    transform: scale(1.1);
+}
+
+.card-episode i {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    justify-content: center;
+    color: #FF645C;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card-episode i:hover {
+    transform: scale(1.3);
+}
+
+.gradient {
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.disabled {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.episode-span {
+    color: gray;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+.season-two {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.season-two p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.ph-30 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.gap-150 {
+    gap: 150px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+/* Right Side */
+.right-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 160px;
+    position: absolute;
+    right: 30px;
+    top: 50%; 
+    gap: 20px;
+    transform: translate(-50%, -50%);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    height: 5vh;
+}
+  
+.footer p {
+    font-size: 0.8rem;
+}
+
+.footer p i {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.footer p i:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+} 
+
+.footer a {
+    color: #CCDFCB;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer a:hover {
+    color: #FF645C;
+    border-bottom-color: #FF645C;
+}
+
+.footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: #FF645C;
+    transition: width 0.4s ease;
+    border-radius: 2px;
+}
+
+.footer a:hover::after {
+    width: 100%;
+}

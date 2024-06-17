@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix [Clone]</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/88bfaae0e7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- Menu -->
+        <div class="nav-container">
+            <div class="menu">
+                <ul>
+                    <li><a aria-label="Go to about" href="#about">About</a></li>
+                    <li><a aria-label="Go to trailer" href="https://youtu.be/ujv2fLp3lU8?si=1nQU9X8_Mfq9VLUX" target="_blank">Trailer</a></li>
+                    <li><img id="logo" src="./assets/netflix-logo.png" alt="logo Netflix"></li>
+                    <li><a aria-label="Go to voice actors" href="#voiceactors">Voice Actors</a></li>
+                    <li><a aria-label="Go to ratings" href="https://myanimelist.net/anime/52299/Ore_dake_Level_Up_na_Ken" target="_blank">Ratings</a></li>         
+                </ul>                
+            </div>
+        </div>
+
+        <!-- Left Content -->
+        <div class="content-container">
+            <div class="left-content ph-30 gap-150 pt-50">
+                <div class="info_serie">
+                    <h1 class="title">Solo Leveling</h1>
+                        <div class="genre-container">
+                        <h2 class="genre">Action</h2>
+                        <h2 class="genre">Adventure</h2>
+                        <h2 class="genre">Fantasy</h2>
+                        </div>
+
+                    <div class="additional-info">
+                        <div class="category-year">
+                            <span class="category">Anime</span>
+                            <span class="year">2024</span>
+                        </div>
+                    <!-- Stars will be added via JS-->
+                    <div class="rating">
+                        <div class="stars-container"></div>
+                    </div>
+                    </div>
+                    <div class="des-container">
+                    <p class="description">After a traumatic event, Jin-Woo awakes with a unique ability to "level up", unlocking new powers and uncovering secrets buried deep within dungeons. With each battle won and quest completed, Jin-Woo evolves from a mere noob to a formidable player, steadily climbing the ladder of power while "Solo Leveling"... <a class="more-info" href="#"><strong>Discover more</strong></a></p>
+                    </div>
+
+                    <div class="season-one">
+                        <h3>Season 1</h3>
+                        <img id="larrow" class="left-arrow disabled" src="./assets/chevron-left.png" alt="left-arrow">
+                        <img id="rarrow" class="right-arrow" src="./assets/chevron-right.png" alt="right-arrow">
+                    </div>
+                    
+                    <!-- Moved to JS to handle episodes-->
+                    <div id="episodes-list" class="episodes">
+                        <!-- <div class="card-episode"> -->
+                            <!-- <span>S1:01</span>
+                            <span>24min</span>
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div> -->
+                        <!-- <div class="card-episode">
+                            <span>S1:02</span>
+                            <span>24min</span>
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="card-episode">
+                            <span>S1:03</span>
+                            <span>24min</span>
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div> -->
+                    </div>
+
+                    <div class="season-two">
+                        <h3>Season 2</h3>
+                        <p>Coming soon...</p>
+                    </div>
+
+                </div>
+            </div>
+
+        <!-- Right Content -->
+            <div class="right-content">
+                <!-- <div>
+                    <img class="poster" src="./assets/solo-leveling-bg.jpg" alt="Supernatural Poster">
+                </div>   -->
+            
+                <div class="social">
+                    <a href="#"><img id="instagram" src="./assets/instagram.png" alt="Instagram Icon"></a>
+                    <a href="#"><img id="facebook" src="./assets/facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img id="twitter" src="./assets/twitter.png" alt="Twitter Icon"></a>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Footer -->
+         <div class="footer">
+            <footer>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Made with <i class="fa-solid fa-heart"></i> & <i class="fa-solid fa-mug-hot"></i> by <a href="https://github.com/naty-c"><span>Natália Cagnani</span></a></p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="rating.js"></script>
+        <script src="menu.js"></script>
+    </body>
+</html>
